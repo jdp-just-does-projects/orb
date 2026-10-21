@@ -1,0 +1,22 @@
+[package]
+name = "orb-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "orb"
+path = "src/main.rs"
+
+[dependencies]
+orb-core.workspace = true
+orb-db.workspace = true
+orb-meta.workspace = true
+orb-media.workspace = true
+orb-index.workspace = true
+orb-jobs.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tokio.workspace = true

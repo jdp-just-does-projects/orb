@@ -1,0 +1,5 @@
+# Linux: link with mold when available (much faster incremental builds).
+# Install: `apt install mold clang`. Remove this section if you cannot install it.
+[target.x86_64-unknown-linux-gnu]
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=mold"]

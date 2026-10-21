@@ -1,0 +1,9 @@
+{
+  "name": "orb-workspace",
+  "private": true,
+  "packageManager": "pnpm@12.14.0",
+  "scripts": {
+    "dev": "pnpm --filter orb-desktop tauri dev",
+    "build": "pnpm --filter orb-desktop tauri build"
+  }
+}
